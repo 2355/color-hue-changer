@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Hue Changer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Color Hue Changer</h1>
+
+  <table border="1"> <!-- テーブルボーダーを追加 -->
+    <tr>
+      <td><input type="file" id="imageInput"></td>
+      <td><img id="baseImage" alt="Uploaded Image" width="200" height="200" src="https://placehold.jp/200x200.png?text=image"></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="container">
+          <div class="sliderWrapper">
+            <label for="hueSlider">Hue:</label>
+            <input type="range" id="hueSlider" min="0" max="360" value="0">
+          </div>
+          <a id="downloadLink" download="modified_image.jpg">
+            <button id="downloadButton">Download Modified Image</button>
+          </a>
+        </div>
+      </td>
+      <td><img id="modifiedImage" alt="Modified Image" width="200" height="200" src="https://placehold.jp/200x200.png?text=image"></td>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
